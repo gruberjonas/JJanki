@@ -1,0 +1,380 @@
+/* ##### Allgemeines Styling ##### */
+
+:root{
+	font-size: 20px;
+	font-family: "Helvetica Neue" Helvetica Arial sans-serif;	
+}
+
+:root.mobile{
+	font-size: 16px;
+}
+
+.card{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0.5rem 0px 0.5rem;
+
+	background-color: var(--color-background) !important;
+	--color-fehler: var(--color-red) !important;
+	color: var(--color-content-primary) !important;
+  
+}
+
+.hr{
+	border: 1px solid var(--color-background-highlights) !important;
+}
+
+.show{
+	display: inline;
+}
+
+.hide{
+	display: none;
+}
+
+
+
+/* ##### Styling einzelner Elemente ##### */
+
+
+/* Header */
+
+.container{
+	display: flex;
+	margin-top: 15px;
+}
+
+.header{
+	display: flex;
+	flex: 1;
+ 	justify-content: center;
+}
+
+.jjanki{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+
+  	font-size: 0.75rem;
+	font-weight: bold;
+	color: var(--color-content-secondary) !important;
+
+  border: 1px solid var(--color-content-secondary);
+	border-radius: 0.25rem;
+	padding: 0.2rem;
+	
+	
+}
+
+.überschrift{
+	font-size: 0.8rem;
+	color: var(--color-content-secondary) !important;
+}
+
+.ID{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+  
+  font-size: 0.75rem;
+	font-weight: bold;
+	color: var(--color-content-secondary) !important;
+  
+  border: 1px solid var(--color-content-secondary);
+	border-radius: 0.25rem;
+	padding: 0.2rem;
+	
+
+}
+
+
+
+/* Haupteil */
+
+.frage {
+	display: block;
+	margin: 1rem 1rem 1.5rem 1rem;
+  	color: var(--color-content-primary) !important;
+}
+
+.antwort {
+	display: block;
+	margin: 1rem 1rem 1.5rem 1rem;
+  color: var(--color-content-primary) !important;
+}
+
+/* Zusatz */
+
+.merkhilfe{
+	display: block;
+	margin: 1rem 1rem 1rem 1rem;
+
+	color: var(--color-content-secondary) !important;
+}
+
+.zusatzinformationen{
+	display: block;
+	margin: 0.5rem 1rem 1rem 1rem;
+
+	color: var(--color-content-secondary) !important;
+}
+
+.quelle{
+	display: block;
+	margin: 0 0 0.75rem 0;
+	font-size: 0.5rem;
+	text-align: left;
+	
+	color: var(--color-content-secondary) !important;
+}
+
+.quelle_fehler{
+	color: var(--color-fehler) !important;
+}
+
+.tags{
+	display: block;
+	margin: 1rem 0px 0px 0px;
+	font-size: 0.8rem;
+	font-style: italic;
+
+	color: var(--color-content-secondary) !important;
+}
+
+
+
+/* Buttons */
+
+
+button.button_quelle{
+	margin: ;
+	background-color: ;
+	color: gray;
+	font-size: ;
+	padding: ;
+	border-radius: 5px;
+	transition-duration: ;		
+}
+
+button.button_errata{
+	margin: ;
+	background-color: ;
+	color: gray;
+	font-size: ;
+	padding: ;
+	border-radius: 5px;
+	transition-duration: ;	
+}
+
+button.button_errata:hover{
+	background-color: ;
+	color: ;
+	font-size: ;
+}
+
+button.button_tags{
+	margin: ;
+	background-color: ;
+	color: gray;
+	font-size: ;
+	padding: ;
+	border-radius: 5px;
+	transition-duration: ;	
+}
+
+button.button_tags:hover{
+	background-color: ;
+	color: ;
+	font-size: ;
+}
+
+/* ##### Mobile Extra ##### */
+
+.card.mobile{
+	word-wrap:  break-word;
+}
+
+
+
+
+/* ##### Closet ##### */
+
+@charset "UTF-8";
+.android .card:not(.mathjax-rendered) {
+  visibility: hidden;
+}
+
+.closet-delay {
+  visibility: hidden;
+}
+
+.closet-log {
+  color: black;
+  background-color: #ff9328;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.closet-shuffle__separator::before {
+  content: ", ";
+}
+
+.closet-cloze::before {
+  content: "[";
+}
+.closet-cloze::after {
+  content: "]";
+}
+
+.closet-cloze.is-active {
+  color: var(--color-content-primary);
+}
+
+.nightMode .closet-cloze.is-active {
+  color:var(--color-content-primary);
+}
+
+.closet-cloze.is-back::before, .closet-cloze.is-inactive::before {
+  content: normal;
+}
+.closet-cloze.is-back::after, .closet-cloze.is-inactive::after {
+  content: normal;
+}
+
+.closet-cloze__hint:empty::before {
+  content: "...";
+}
+
+.closet-cloze__ellipsis::before {
+  content: "...";
+}
+
+.closet-multiple-choice::before {
+  content: "( ";
+}
+.closet-multiple-choice::after {
+  content: " )";
+}
+.closet-multiple-choice.is-inactive::before {
+  content: normal;
+}
+.closet-multiple-choice.is-inactive::after {
+  content: normal;
+}
+
+.closet-multiple-choice__separator::before {
+  content: ", ";
+}
+
+.closet-multiple-choice__option {
+  color: orange;
+}
+
+.closet-multiple-choice__correct {
+  color: lime;
+}
+
+.closet-multiple-choice__wrong {
+  color: red;
+}
+
+.closet-multiple-choice__ellipsis::before {
+  content: "...";
+}
+
+.closet-mingle::before {
+  content: "«";
+}
+.closet-mingle::after {
+  content: "»";
+}
+.closet-mingle.is-active .closet-mingle__item {
+  color: mediumpurple;
+}
+.closet-mingle.is-inactive::before {
+  content: normal;
+}
+.closet-mingle.is-inactive::after {
+  content: normal;
+}
+
+.closet-mingle__separator::before {
+  content: ", ";
+}
+
+.closet-mingle__ellipsis::before {
+  content: "...";
+}
+
+.closet-jumble::before {
+  content: "«";
+}
+.closet-jumble::after {
+  content: "»";
+}
+.closet-jumble.is-active .closet-jumble__item {
+  color: mediumpurple;
+}
+.closet-jumble.is-inactive::before {
+  content: normal;
+}
+.closet-jumble.is-inactive::after {
+  content: normal;
+}
+
+.closet-jumble__separator::before {
+  content: ", ";
+}
+
+.closet-jumble__ellipsis::before {
+  content: "...";
+}
+
+.closet-sort::before {
+  content: "«";
+}
+.closet-sort::after {
+  content: "»";
+}
+.closet-sort.is-active .closet-sort__item {
+  color: mediumpurple;
+}
+.closet-sort.is-inactive::before {
+  content: normal;
+}
+.closet-sort.is-inactive::after {
+  content: normal;
+}
+
+.closet-sort__separator::before {
+  content: ", ";
+}
+
+.closet-sort__ellipsis::before {
+  content: "...";
+}
+
+.closet-rect__rect {
+  fill: moccasin;
+  stroke: olive;
+}
+.is-active .closet-rect__rect {
+  fill: salmon;
+  stroke: yellow;
+}
+.is-back.is-active .closet-rect__rect {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.closet-rect__ellipsis {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.closet-rect__label {
+  stroke: black;
+  stroke-width: 0.5;
+}

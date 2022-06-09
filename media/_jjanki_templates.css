@@ -1,0 +1,117 @@
+/* ##### Farb-Templates ##### */
+
+
+/* ### Standard ### */
+
+:root{
+    
+  /* Standard General */
+  
+  --color-standard-yellow: hsl(33, 100%, 69%);
+  --color-standard-orange: hsl(21, 69%, 60%);
+  --color-standard-red: hsl(3, 100%, 69%);
+  --color-standard-magenta: #d33682;
+  --color-standard-violet: #6c71c4;
+  --color-standard-blue: hsl(203, 43%, 56%);
+  --color-standard-cyan: #2aa198;
+  --color-standard-green: hsl(93, 87%, 35%);
+
+  --color-yellow: var(--color-standard-yellow);
+  --color-orange: var(--color-standard-orange);
+  --color-red: var(--color-standard-red);
+  --color-magenta: var(--color-standard-magenta);
+  --color-violet: var(--color-standard-violet);
+  --color-blue: var(--color-standard-blue);
+  --color-cyan: var(--color-standard-cyan);
+  --color-green: var(--color-standard-green);
+
+    
+
+  /* Standard Day */
+    
+  --color-background: hsl(0, 0%, 100%);
+  --color-background-highlights: hsl(0, 0%, 80%);
+  --color-content-primary: hsl(0, 0%, 0%);
+  --color-content-secondary: hsl(0, 0%, 30%);
+  --color-content-emphasized: hsl(0, 0%, 0%);
+
+  --color-shadow: hsl(0, 0%, 60%);
+}
+
+:root[class*=night-mode]{
+    
+  /* Standard Night */ 
+  
+  --color-background: hsl(240, 2%, 19%);
+  --color-background-highlights: hsl(0, 0%, 23%);
+  --color-content-primary: hsl(0, 0%, 100%);
+  --color-content-secondary: hsl(0, 0%, 70%);
+  --color-content-emphasized: hsl(0, 0%, 100%);
+
+  --color-shadow: hsl(0, 0%, 10%);
+
+}
+
+/*
+
+/* ### Solarized ### 
+
+:root{
+	
+  /* Solarized General 
+  
+  --color-solarized-base03: #002b36;
+  --color-solarized-base02: #073642;
+  --color-solarized-base01: #586e75;
+  --color-solarized-base00: #657b83;
+  --color-solarized-base0: #839496;
+  --color-solarized-base1: #93a1a1;
+  --color-solarized-base2: #eee8d5;
+  --color-solarized-base3: #fdf6e3;
+  
+  --color-solarized-yellow: #b58900;
+  --color-solarized-orange: #cb4b16;
+  --color-solarized-red: #dc322f;
+  --color-solarized-magenta: #d33682;
+  --color-solarized-violet: #6c71c4;
+  --color-solarized-blue: #268bd2;
+  --color-solarized-cyan: #2aa198;
+  --color-solarized-green: #859900;
+
+  --color-yellow: var(--color-solarized-yellow);
+  --color-orange: var(--color-solarized-orange);
+  --color-red: var(--color-solarized-red);
+  --color-magenta: var(--color-solarized-magenta);
+  --color-violet: var(--color-solarized-violet);
+  --color-blue: var(--color-solarized-blue);
+  --color-cyan: var(--color-solarized-cyan);
+  --color-green: var(--color-solarized-green);
+
+	
+
+  /* Solarized Day 
+	
+  --color-background: var(--color-solarized-base3);
+  --color-background-highlights: var(--color-solarized-base2);
+  --color-content-primary: var(--color-solarized-base00);
+  --color-content-secondary: var(--color-solarized-base1);
+  --color-content-emphasized: var(--color-solarized-base01);
+
+  --color-shadow: hsl(0, 0%, 60%);
+}
+
+:root[class*=night-mode]{
+	
+  /* Solarized Night 
+  
+  --color-background: var(--color-solarized-base03);
+  --color-background-highlights: var(--color-solarized-base02);
+  --color-content-primary: var(--color-solarized-base0);
+  --color-content-secondary: var(--color-solarized-base01);
+  --color-content-emphasized: var(--color-solarized-base1);
+
+  --color-shadow: hsl(0, 0%, 10%);
+
+}
+
+*/
